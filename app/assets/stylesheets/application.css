@@ -15,71 +15,33 @@
  */
 /* Style général de la page */
 /* Conteneur principal */
-.container {
-  text-align: center;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 500px;
-  margin: auto;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+  padding: 0 24px;
 }
 
-/* Titre principal */
 h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-weight: 400;
 }
 
-/* Texte "Voici une grille" */
-.grid p {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Grille des lettres */
 .letters {
-  font-size: 24px; /* Taille des lettres */
-  font-weight: bold; /* En gras */
-  color: white; /* Couleur des lettres */
-  background-color: #007bff; /* Fond bleu */
-  padding: 10px; /* Espacement interne */
-  border-radius: 5px; /* Coins arrondis */
-  display: inline-block; /* Garde les lettres en une seule ligne */
-  text-align: center; /* Centre les lettres */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Légère ombre */
+  padding-left: 0;
+  font-size: 24px;
+  list-style: none;
+  font-family: monospace;
 }
 
-/* Formulaire */
-form {
-  margin-top: 20px;
-}
-
-/* Champ de saisie */
-input[type="text"] {
-  width: calc(100% - 60px);
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Bouton de soumission */
-button[type="submit"] {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #007bff;
+.letters li {
+  background-color: #0d6efd;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 4px 12px;
+  display: inline;
 }
 
-button[type="submit"]:hover {
-  background-color: #0056b3;
+.form-prefix {
+  margin-top: 2em;
 }
